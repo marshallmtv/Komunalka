@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.komunalka.Water" >
+
+    
+    
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Введіть кількість"
+        android:textSize="32dp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+    
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="витраченного газу"
+    android:layout_gravity="right"
+    android:textSize="32dp"
+    android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+<EditText 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:numeric="decimal"
+    android:id="@+id/inputValue"
+    android:hint="Введіть"
+    android:textSize="42dp"
+    android:gravity="center"
+    />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Тариф становить"
+    android:layout_gravity="left"
+    android:textSize="24dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+    
+    
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="3,6 грн. за 1 куб.м. "
+    android:layout_gravity="right"
+    android:textSize="24dp"
+    android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+<Button 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Обрахувати"
+    android:textSize="46dp"
+    android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:background="@drawable/hbutton"
+        android:onClick="Go"
+    />
+
+    <TextView
+        android:id="@+id/Result"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text=" грн."
+    android:textSize="48dp"
+    android:gravity="center"
+    android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+
+</LinearLayout>
