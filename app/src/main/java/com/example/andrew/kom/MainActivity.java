@@ -1,5 +1,6 @@
 package com.example.andrew.kom;
 
+import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -7,11 +8,14 @@ import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
+
 
 
     EditText e1;
@@ -68,11 +72,17 @@ e1.addTextChangedListener(inputTextWatcher);*/
         }
     }
 
+
     public void Go(View v) {
         double i1, i2;
         i1 = Integer.parseInt(e1.getText().toString());
         i2 = i1 * 5.2;
         TextView t = (TextView) findViewById(R.id.Result);
         t.setText(Double.toString(i2) + " грн.");
+        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+
+        Button b1 = (Button) findViewById(R.id.button);
+        imm.hideSoftInputFromWindow(b1.getWindowToken(),
+                InputMethodManager.HIDE_NOT_ALWAYS);
     }
 }
